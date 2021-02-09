@@ -1,0 +1,39 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+<body>
+    <div class='calculator'>
+        <div class='input'>
+            <p id='in'></p>
+            <p id='on'>on</p>
+        </div>
+        <div class='buttonsArea'>
+        <button onclick = 'removeAll()'>C</button>
+        <button onclick = 'deleteSign()'><=</button>
+        <button>%</button>
+        <button class = 'sign' value = '/' id = 'divide' onclick = 'showS (this.value)'>/</button>
+        <button value='7' class = 'num' onclick='showS (this.value)'>7</button>
+        <button value='8' class = 'num' onclick='showS (this.value)'>8</button>
+        <button value="9" class = 'num' onclick='showS (this.value)'>9</button>
+        <button class = 'sign' value= '*' id = 'multiply' onclick = 'showS (this.value)'>*</button>
+        <button value="4" class='num' onclick='showS (this.value)'>4</button>
+        <button value="5" class = 'num' onclick='showS (this.value)'>5</button>
+        <button value="6" class = 'num' onclick='showS (this.value)'>6</button>
+        <button class = 'sign' value= '-' id = 'minus' onclick = 'showS (this.value)'>-</button>
+        <button value="1" class = 'num' onclick='showS (this.value)'>1</button>
+        <button value="2" class = 'num' onclick='showS (this.value)'>2</button>
+        <button value="3" class = 'num' onclick='showS (this.value)'>3</button>
+        <button class = 'sign' id = 'plus' value = '+' onclick = 'showS (this.value)'>+</button>
+        <button></button>
+        <button value="0" class = 'num' onclick='showS (this.value)'>0</button>
+        <button value='.' class='sign' onclick = 'showS (this.value)'>.</button>
+        <button onclick = 'operate()'>=</button>
+        </div>
+    </div>
+    <link href="index.css" rel='stylesheet'>
+    <script src="index.js"></script>
+</body>
+</html>
